@@ -8,9 +8,9 @@ namespace DependencyInjectionContainer.DependencyInjection
     {
         private readonly List<ServiceInfo> _servicesInfo;
         
-        public DiContainer(List<ServiceInfo> serviceDescriptors)
+        public DiContainer(List<ServiceInfo> serviceInfo)
         {
-            _servicesInfo = serviceDescriptors;
+            _servicesInfo = serviceInfo;
         }
 
         public object GetService(Type serviceType)

@@ -19,11 +19,12 @@ namespace DependencyInjectionContainer
             var service = container.GetService<IProvider>();
             var serviceFirst = container.GetService<IService>();
             var serviceSecond = container.GetService<IService>();
-            
+            var service3 = container.GetService<IProvider>();
             
             serviceFirst.PrintSomething();
             serviceSecond.PrintSomething();
-            Console.Write(service.RandomGuid);
+            Console.WriteLine(service.RandomGuid);
+            Console.WriteLine(service3.RandomGuid);
         }
     }
 }
